@@ -87,22 +87,22 @@ PWM_STEERING_THROTTLE = {
     "PWM_THROTTLE_PIN": "PCA9685.1:40.0",   # PWM output pin for ESC
     "PWM_THROTTLE_SCALE": 1.0,              # used to compensate for PWM frequence differences from 60hz; NOT for increasing/limiting speed
     "PWM_THROTTLE_INVERTED": False,         # True if hardware requires an inverted PWM pulse
-    "STEERING_LEFT_PWM": 460,               #pwm value for full left steering
-    "STEERING_RIGHT_PWM": 290,              #pwm value for full right steering
+    "STEERING_LEFT_PWM": 475,               #pwm value for full left steering
+    "STEERING_RIGHT_PWM": 325,              #pwm value for full right steering
     "THROTTLE_FORWARD_PWM": 500,            #pwm value for max forward throttle
-    "THROTTLE_STOPPED_PWM": 370,            #pwm value for no movement
+    "THROTTLE_STOPPED_PWM":370,           #pwm value for no movement
     "THROTTLE_REVERSE_PWM": 220,            #pwm value for max reverse throttle
 }
 
 #
 # I2C_SERVO (deprecated in favor of PWM_STEERING_THROTTLE)
 #
-STEERING_CHANNEL = 1            #(deprecated) channel on the 9685 pwm board 0-15
-STEERING_LEFT_PWM = 460         #pwm value for full left steering
-STEERING_RIGHT_PWM = 290        #pwm value for full right steering
+STEERING_CHANNEL = 1         #(deprecated) channel on the 9685 pwm board 0-15
+STEERING_LEFT_PWM = 530         #pwm value for full left steering
+STEERING_RIGHT_PWM = 330        #pwm value for full right steering
 THROTTLE_CHANNEL = 0            #(deprecated) channel on the 9685 pwm board 0-15
 THROTTLE_FORWARD_PWM = 500      #pwm value for max forward throttle
-THROTTLE_STOPPED_PWM = 370      #pwm value for no movement
+THROTTLE_STOPPED_PWM = 370  #pwm value for no movement
 THROTTLE_REVERSE_PWM = 220      #pwm value for max reverse throttle
 
 #

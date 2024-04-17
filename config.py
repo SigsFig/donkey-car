@@ -87,8 +87,8 @@ PWM_STEERING_THROTTLE = {
     "PWM_THROTTLE_PIN": "PCA9685.1:40.0",   # PWM output pin for ESC
     "PWM_THROTTLE_SCALE": 1.0,              # used to compensate for PWM frequence differences from 60hz; NOT for increasing/limiting speed
     "PWM_THROTTLE_INVERTED": False,         # True if hardware requires an inverted PWM pulse
-    "STEERING_LEFT_PWM": 460,               #pwm value for full left steering
-    "STEERING_RIGHT_PWM": 290,              #pwm value for full right steering
+    "STEERING_LEFT_PWM": 475,               #pwm value for full left steering
+    "STEERING_RIGHT_PWM": 325,              #pwm value for full right steering
     "THROTTLE_FORWARD_PWM": 500,            #pwm value for max forward throttle
     "THROTTLE_STOPPED_PWM": 370,            #pwm value for no movement
     "THROTTLE_REVERSE_PWM": 220,            #pwm value for max reverse throttle
@@ -729,7 +729,7 @@ AI_LAUNCH_ENABLE_BUTTON = 'R2'      # this keypress will enable this boost. It m
 AI_LAUNCH_KEEP_ENABLED = False      # when False ( default) you will need to hit the AI_LAUNCH_ENABLE_BUTTON for each use. This is safest. When this True, is active on each trip into "local" ai mode.
 
 #Scale the output of the throttle of the ai pilot for all model types.
-AI_THROTTLE_MULT = 1.0              # this multiplier will scale every throttle value for all output from NN models
+AI_THROTTLE_MULT = .95              # this multiplier will scale every throttle value for all output from NN models
 
 #Path following
 PATH_FILENAME = "donkey_path.pkl"   # the path will be saved to this filename
